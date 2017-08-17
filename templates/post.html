@@ -2,23 +2,27 @@
 {% load custom_markdown %}
 
 {% block content %}
-<div class="posts">
+<div>
 
         <section class="post">
             <header class="post-header">
                 <h2 class="post-title">{{ post.title }}</h2>
 
                     <p class="post-meta">
-                        Time:  <a class="post-author" href="#">{{ post.date_time }}</a> <a class="post-category post-category-js" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
+                        Post on:  {{ post.date_time }}
+                        <a class="post-category" href="{% url "search_tag" tag=post.category %}">
+                        {{ post.category }}
+                        </a>
                     </p>
             </header>
 
-                <div class="post-description">
+            <div class="post-description">
                     <p>
                         {{ post.content|custom_markdown }}
                     </p>
-                </div>
+            </div>
         </section>
 
-</div><!-- /.blog-post -->
+</div>
+<!-- /.blog-post -->
 {% endblock %}
