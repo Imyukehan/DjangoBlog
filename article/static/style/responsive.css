@@ -1,0 +1,24 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.3%;
+}
+.col-9 {
+    width: 75%;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
