@@ -19,6 +19,6 @@
 }
 
 .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 900px;
+    margin: auto;
 }
